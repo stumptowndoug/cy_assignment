@@ -101,7 +101,9 @@ Exported data from Athena view.
 [Export-Data-File](https://github.com/stumptowndoug/cy_assignment/blob/master/data-files/cy_assignment_data.csv)
 
 
-## Assignment Question 1
+## Assignment Questions 
+
+* Question 1
 
 ```
 How are sales-reps using each territory to meet their quotas (by percentage)?
