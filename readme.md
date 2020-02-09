@@ -107,7 +107,15 @@ Exported data from Athena view.
 
 ### How are sales-reps using each territory to meet their quotas (by percentage)?
 
+#### Sales Person vs Quota:  In this view I wanted to specifically show how reps were doing against quota. All reps seem to have low quotas. The data in this view is only YTD (Jan through May) so they quotas are not set property.
+
 ![Sales-vs-Quota](https://cy-assignment.s3-us-west-2.amazonaws.com/Quota+vs+Sales.png)
+
+#### Sales Persin vs Territory: In this view I am splitting out each sales persons sales by territory.
+
+![Sales-by-Territory](https://cy-assignment.s3-us-west-2.amazonaws.com/Sales+by+Territory.png)
+
+
 
 
 
