@@ -105,8 +105,8 @@ Exported data from Athena view.
 
 * Question 1
 
-* ```
-How are sales-reps using each territory to meet their quotas (by percentage)?
+```
+* How are sales-reps using each territory to meet their quotas (by percentage)?
 ```
 
 ![Sales-vs-Quota](https://cy-assignment.s3-us-west-2.amazonaws.com/Quota+vs+Sales.png)
