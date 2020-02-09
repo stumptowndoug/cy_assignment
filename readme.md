@@ -7,27 +7,15 @@ I have a mac as my personal computer so I wanted to avoide setting up a new vers
 ## Step 1
 Cloned the git repository from SQLServer and found the correct .csv files to import into Athena
 
+```
 git clone git@github.com:stumptowndoug/sql-server-samples.git
-
+```
 
 ## Step 2
 Setup a personal S3 bucket to store the .csv files 
-
-s3://doug-cy-test
 
 
 ## Step 3
 I found a helpful data dictionary for AdventureWorks:
 
 [AdventureWorks Data Dictionary](http://dataedo.com/samples/html/AdventureWorks/doc/AdventureWorks_2/modules/Sales_12/module.html "Dataedo AdventureWorks Data Dictionary")
-
-
-
-```
-print('Hello, world!')
-```
-
-> "This is a great project" - unknown
-
-**this is bold**
-_italics_
