@@ -107,7 +107,7 @@ Exported data from Athena view.
 How are sales-reps using each territory to meet their quotas (by percentage)?
 ```
 
-![Sales Rep compared to quta](https://public.tableau.com/views/Cy_assingment/QuotavsSales?:display_count=y&publish=yes&:origin=viz_share_link)
+<script src="https://public.tableau.com/views/Cy_assingment/QuotavsSales?:display_count=y&publish=yes&:origin=viz_share_link"></script>
 
 
 
