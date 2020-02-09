@@ -31,7 +31,12 @@ CREATE DATABASE cy_test;
 Setup Athena Tables using DDL
 
 ```
-CREATE EXTERNAL TABLE IF NOT EXISTS SalesOrderDetail (
+----------------------------------------------------------------
+--CREATE sales_order_detail TABLE IN ATHENA
+----------------------------------------------------------------
+
+
+CREATE EXTERNAL TABLE IF NOT EXISTS sales_order_detail (
 SalesOrderID INT,
 SalesOrderDetailID INT,
 CarrierTrackingNumber STRING,
@@ -50,9 +55,13 @@ ModifiedDate TIMESTAMP
   ESCAPED BY '\\'
   LINES TERMINATED BY '\n' 
 LOCATION 's3://doug-cy-test/salesorderdetail';
-```
 
-```
+
+----------------------------------------------------------------
+--CREATE sales_order_header TABLE IN ATHENA
+----------------------------------------------------------------
+
+
 CREATE EXTERNAL TABLE IF NOT EXISTS sales_order_header (
     SalesOrderID INT,
     RevisionNumber INT,
@@ -87,9 +96,8 @@ CREATE EXTERNAL TABLE IF NOT EXISTS sales_order_header (
   ESCAPED BY '\\'
   LINES TERMINATED BY '\n' 
 LOCATION 's3://doug-cy-test/salesorderheader';
-```
 
-```
+
 ----------------------------------------------------------------
 --CREATE sales_person TABLE IN ATHENA
 ----------------------------------------------------------------
@@ -112,4 +120,168 @@ ModifiedDate TIMESTAMP
   ESCAPED BY '\\'
   LINES TERMINATED BY '\n' 
 LOCATION 's3://doug-cy-test/salesperson';
+
+
+----------------------------------------------------------------
+--CREATE sales_territory TABLE IN ATHENA
+----------------------------------------------------------------
+
+
+CREATE EXTERNAL TABLE IF NOT EXISTS sales_territory (
+TerritoryID INT,
+Name STRING,
+CountryRegionCode STRING,
+group STRING,
+SalesYTD DECIMAL,
+SalesLastYear DECIMAL,
+CostYTD DECIMAL,
+CostLastYear DECIMAL,
+rowguid STRING,
+ModifiedDate TIMESTAMP
+)
+
+ ROW FORMAT DELIMITED
+  FIELDS TERMINATED BY '\t'
+  ESCAPED BY '\\'
+  LINES TERMINATED BY '\n' 
+LOCATION 's3://doug-cy-test/salesterritory';
+
+
+----------------------------------------------------------------
+--CREATE employee TABLE IN ATHENA
+----------------------------------------------------------------
+
+
+CREATE EXTERNAL TABLE IF NOT EXISTS employee (
+BusinessEntityID INT,
+NationalIDNumber STRING,
+LoginID STRING,    
+Org STRING,
+OrganizationLevel INT,
+JobTitle STRING,
+BirthDate DATE,
+MaritalStatus STRING,
+Gender STRING,
+HireDate DATE,
+SalariedFlag INT,
+VacationHours INT,
+SickLeaveHours INT,
+CurrentFlag INT,
+rowguid STRING,
+ModifiedDate TIMESTAMP
+)
+
+ ROW FORMAT DELIMITED
+  FIELDS TERMINATED BY '\t'
+  ESCAPED BY '\\'
+  LINES TERMINATED BY '\n' 
+LOCATION 's3://doug-cy-test/employee';
+
+
+----------------------------------------------------------------
+--CREATE person TABLE IN ATHENA
+----------------------------------------------------------------
+
+
+CREATE EXTERNAL TABLE IF NOT EXISTS person (
+NameStyle INT,
+Title STRING,
+FirstName STRING,
+MiddleName STRING,
+LastName STRING,
+Suffix STRING,
+EmailPromotion INT,
+AdditionalContactInfo STRING,
+Demographics STRING,
+rowguid STRING,
+ModifiedDate TIMESTAMP
+)
+
+ ROW FORMAT DELIMITED
+  FIELDS TERMINATED BY '\t'
+  ESCAPED BY '\\'
+  LINES TERMINATED BY '\n' 
+LOCATION 's3://doug-cy-test/person';
+
+----------------------------------------------------------------
+--CREATE sales_store TABLE IN ATHENA
+----------------------------------------------------------------
+
+
+CREATE EXTERNAL TABLE IF NOT EXISTS sales_store (
+BusinessEntityID INT,
+Name STRING,
+SalesPersonID INT,
+Demographics STRING,
+rowguid STRING,
+ModifiedDate TIMESTAMP
+)
+
+ ROW FORMAT DELIMITED
+  FIELDS TERMINATED BY '\t'
+  ESCAPED BY '\\'
+  LINES TERMINATED BY '\n' 
+LOCATION 's3://doug-cy-test/store';
+
+----------------------------------------------------------------
+--CREATE sales_customer TABLE IN ATHENA
+----------------------------------------------------------------
+
+CREATE EXTERNAL TABLE IF NOT EXISTS sales_customer (
+CustomerID INT,
+PersonID INT,
+StoreID INT,
+TerritoryID INT,
+AccountNumber STRING,
+rowguid STRING,
+ModifiedDate TIMESTAMP
+)
+
+ ROW FORMAT DELIMITED
+  FIELDS TERMINATED BY '\t'
+  ESCAPED BY '\\'
+  LINES TERMINATED BY '\n' 
+LOCATION 's3://doug-cy-test/customer';
+
+
+----------------------------------------------------------------
+--CREATE sales_customer TABLE IN ATHENA
+----------------------------------------------------------------
+
+
+CREATE EXTERNAL TABLE IF NOT EXISTS product (
+ProductID INT,
+Name STRING,
+ProductNumber STRING,
+MakeFlag INT,
+FinishedGoodsFlag INT,
+Color STRING,
+SafetyStockLevel INT,
+ReorderPoint INT,
+StandardCost DECIMAL,
+ListPrice DECIMAL,
+Size STRING,
+SizeUnitMeasureCode STRING,
+WeightUnitMeasureCode STRING,
+Weight DECIMAL,
+DaysToManufacture INT,
+ProductLine STRING,
+Class STRING,
+Style STRING,
+ProductSubcategoryID INT,
+ProductModelID INT,
+SellStartDate TIMESTAMP,
+SellEndDate TIMESTAMP,
+DiscontinuedDate TIMESTAMP,
+rowguid STRING,
+ModifiedDate TIMESTAMP
+)
+
+ ROW FORMAT DELIMITED
+  FIELDS TERMINATED BY '\t'
+  ESCAPED BY '\\'
+  LINES TERMINATED BY '\n' 
+LOCATION 's3://doug-cy-test/product';
 ```
+
+
