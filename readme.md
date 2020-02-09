@@ -35,7 +35,7 @@ Setup Athena Tables using DDL:
 ## Step 6
 Setup view in Athena for necessary reporting requests
 
-```
+`
 ----------------------------------------------------------------
 --CREATE assignment_data_view VIEW IN ATHENA
 ----------------------------------------------------------------
@@ -93,7 +93,7 @@ s.salesquota,
 s.salesytd,
 ss.name,
 pd.name
-```
+`
 
 
 
