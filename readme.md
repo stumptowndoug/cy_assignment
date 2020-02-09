@@ -17,6 +17,8 @@ s3://doug-cy-test
 
 
 ## Step 3
+I found a helpful data dictionary for AdventureWorks:
+
 ![AdventureWorks Data Dictionary]
 (http://dataedo.com/samples/html/AdventureWorks/doc/AdventureWorks_2/modules/Sales_12/module.html)
 
