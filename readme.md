@@ -32,6 +32,71 @@ Setup Athena Tables using DDL:
 
 [Athena Table Creation SQL](https://github.com/stumptowndoug/cy_assignment/blob/master/cy_assignment.sql)
 
+## Step 6
+Setup view in Athena for necessary reporting requests
+
+```
+----------------------------------------------------------------
+--CREATE assignment_data_view VIEW IN ATHENA
+----------------------------------------------------------------
+
+
+CREATE OR REPLACE VIEW assignment_data_view AS
+SELECT
+a.salespersonid as sales_person_id,
+DATE_TRUNC('MONTH',a.orderdate) AS order_date,
+p.firstname||' '||p.lastname AS sales_person,
+CASE
+ WHEN s.salesquota IS NULL AND a.salespersonid IS NOT NULL
+ THEN 250000
+ ELSE s.salesquota
+END as quota,
+c.storeid as store_id,
+ss.name as store_name,
+st.name as territory_name,
+a.onlineorderflag as online_flag,
+CASE
+ WHEN a.onlineorderflag = 1
+ THEN 'Online'
+ ELSE 'Reseller'
+END AS sale_type,
+pd.name as product_name,
+SUM(sd.linetotal) as amount
+
+FROM
+sales_order_header as a
+LEFT JOIN sales_order_detail sd
+ ON a.salesorderid = sd.salesorderid
+LEFT JOIN employee e
+ ON a.salespersonid = e.businessentityid
+LEFT JOIN sales_person s
+ ON a.salespersonid = s.businessentityid
+LEFT JOIN person p
+ ON e.businessentityid = p.businessentityid
+LEFT JOIN sales_territory st
+ ON a.territoryid = st.territoryid
+LEFT JOIN sales_customer c
+ ON a.customerid = c.customerid
+LEFT JOIN sales_store ss
+ ON c.storeid = ss.businessentityid
+LEFT JOIN product pd
+ ON sd.productid = pd.productid
+
+GROUP BY
+a.salespersonid,
+DATE_TRUNC('MONTH',a.orderdate),
+p.firstname||' '||p.lastname,
+c.storeid,
+st.name,
+a.onlineorderflag,
+s.salesquota,
+s.salesytd,
+ss.name,
+pd.name
+```
+
+
+
 
 
 
