@@ -95,6 +95,13 @@ ss.name,
 pd.name
 ```
 
+##Step 7
+Exported data from view.
+
+[Export-Data-File](https://github.com/stumptowndoug/cy_assignment/blob/master/data-files/cy_assignment_data.csv)
+
+
+
 
 
 
