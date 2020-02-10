@@ -38,7 +38,7 @@ CREATE DATABASE cy_test;
 ----------------------------------------------------------------
 
 
-CREATE EXTERNAL TABLE IF NOT EXISTS SalesOrderDetail (
+CREATE EXTERNAL TABLE IF NOT EXISTS sales_order_detail (
 SalesOrderID INT,
 SalesOrderDetailID INT,
 CarrierTrackingNumber STRING,
