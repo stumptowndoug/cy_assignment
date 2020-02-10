@@ -8,7 +8,7 @@ I have a mac as my personal computer so I wanted to avoide setting up a new vers
 Cloned the git repository from SQLServer and found the correct .csv files to import into Athena
 
 ```
-git clone git@github.com:stumptowndoug/sql-server-samples.git
+git clone -n https://github.com/Microsoft/sql-server-samples
 ```
 
 ### Step 2
