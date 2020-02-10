@@ -9,7 +9,6 @@
 
 
 --Step 1:  	Cloned the sql-server files from github
---			git clone git@github.com:stumptowndoug/sql-server-samples.git
 
 
 --Step 2:  	Setup a personal S3 bucket to store the .csv files 
