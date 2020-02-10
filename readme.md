@@ -103,19 +103,23 @@ Exported data from Athena view.
 
 # Assignment Questions 
 
-## Question 1
+## Question 1: How are sales-reps using each territory to meet their quotas (by percentage)?
 
-### How are sales-reps using each territory to meet their quotas (by percentage)?
 
-##### Sales Person vs Quota:  
 In this view I wanted to specifically show how reps were doing against quota. All sales people for the exception of 3 are well beyond quota YTD.
+
 
 ![Sales-vs-Quota](https://cy-assignment.s3-us-west-2.amazonaws.com/Quota+vs+Sales.png)
 
-##### Sales Persin vs Territory: 
+
 This is a view of each sales person and the distribution of sales YTD by territory.
 
 ![Sales-by-Territory](https://cy-assignment.s3-us-west-2.amazonaws.com/Sales+by+Territory.png)
+
+
+## Question 2
+
+#### How are sales-reps using each territory to meet their quotas (by percentage)?
 
 
 
