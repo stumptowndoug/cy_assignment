@@ -24,7 +24,7 @@ I found a helpful data dictionary for AdventureWorks:
 Created Athena Database
 
 ```
-CREATE DATABASE cy_test;
+CREATE DATABASE cy_assignment;
 ```
 
 ### Step 5
@@ -124,6 +124,9 @@ The following visualization shows the difference in amount between Onlines vs Re
 
 
 ![Sales-by-Territory](https://cy-assignment.s3-us-west-2.amazonaws.com/Internet+vs+Reseller+Var.png)
+
+
+## Question 2: Create a report that shows all sales by territory, with drill-downs into orders by store and the top-selling reps at each store; the target audience for this report is the AdventureWorks sales-management team.
 
 
 
