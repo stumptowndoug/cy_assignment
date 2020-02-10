@@ -1,5 +1,10 @@
 # AdventureWorks Assignment
 
+Author: Doug Dement
+[LinkedIn](https://www.linkedin.com/in/doug-dement-34795551/)
+email: dougdmail@gmail.com
+
+
 ## Notes
 I have a mac as my personal computer so I wanted to avoide setting up a new version of windows just to install SQLServer. I also wanted to avoid spinning up a whole new RDS server just to get the AdventureWorks data. Instead, I decided to setup an Athena database using S3 to stage AdventureWorks data.
 
