@@ -126,7 +126,7 @@ The following visualization shows the difference in amount between Online and Re
 ![Internet-vs-Reseller](https://cy-assignment.s3-us-west-2.amazonaws.com/Internet+vs+Reseller+Var.png)
 
 
-## Question 2: Create a report that shows all sales by territory, with drill-downs into orders by store and the top-selling reps at each store; the target audience for this report is the AdventureWorks sales-management team.
+## Question 3: Create a report that shows all sales by territory, with drill-downs into orders by store and the top-selling reps at each store; the target audience for this report is the AdventureWorks sales-management team.
 
 
 The below graph shows territory with drill downs for store name and sales person. This specific view is expaned to show both stores and sales person. This view is excluding online sales as the request was specifically asking for store and sales person information. This is also filtered for Australia to improve readability.
@@ -135,9 +135,13 @@ The below graph shows territory with drill downs for store name and sales person
 ![Sales-Territory-Drill](https://cy-assignment.s3-us-west-2.amazonaws.com/Sales+Territory+Drill.png)
 
 
+## Question 4: Create a report that shows all sales by product line, with drill-downs into best selling products by territory; the target audience for this report is the AdventureWorks manufacturing & part-acquisition team.
 
 
+The following view shows each product line with a drill down into the territory with best sales. This is filtered for the first few product lines for readability in this view.
 
+
+![Sales-Product-Line](https://cy-assignment.s3-us-west-2.amazonaws.com/Sales+by+Product+Line+Drill.png)
 
 
 
