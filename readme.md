@@ -120,13 +120,21 @@ This is a view of each sales person and the distribution of sales YTD by territo
 ## Question 2: In which territories are internet sales out-pacing reseller sales (and by how much)?
 
 
-The following visualization shows the difference in amount between Onlines vs Reseller sales. Australia and Germany being the two territories with more online sales.
+The following visualization shows the difference in amount between Online and Reseller sales. Australia and Germany being the two territories with more online sales YTD in 2014.
 
 
-![Sales-by-Territory](https://cy-assignment.s3-us-west-2.amazonaws.com/Internet+vs+Reseller+Var.png)
+![Internet-vs-Reseller](https://cy-assignment.s3-us-west-2.amazonaws.com/Internet+vs+Reseller+Var.png)
 
 
 ## Question 2: Create a report that shows all sales by territory, with drill-downs into orders by store and the top-selling reps at each store; the target audience for this report is the AdventureWorks sales-management team.
+
+
+The below graph shows territory with drill downs for store name and sales person. This specific view is expaned to show both stores and sales person. This view is excluding online sales as the request was specifically asking for store and sales person information. This is also filtered for Australia to improve readability.
+
+
+![Sales-Territory-Drill](https://cy-assignment.s3-us-west-2.amazonaws.com/Sales+Territory+Drill.png)
+
+
 
 
 
