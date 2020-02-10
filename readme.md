@@ -1,8 +1,8 @@
 # AdventureWorks Assignment
 
-1. Author: Doug Dement
-1. [LinkedIn](https://www.linkedin.com/in/doug-dement-34795551/)
-1. email: dougdmail@gmail.com
+Author: Doug Dement<br/>
+[LinkedIn](https://www.linkedin.com/in/doug-dement-34795551/)<br/>
+email: dougdmail@gmail.com
 
 
 ## Notes
