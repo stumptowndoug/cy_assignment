@@ -1,7 +1,7 @@
 # AdventureWorks Assignment
 
 ## Notes
-I have a mac as my personal computer so I wanted to avoide setting up a new version of windows just to install SQLServer. I also wanted to avoid spinning up a whole new RDS server just to get the AdventureWorks data. Instead, I decided to setup an Athena database using S3 as the staging ground for the AdventureWorks data.
+I have a mac as my personal computer so I wanted to avoide setting up a new version of windows just to install SQLServer. I also wanted to avoid spinning up a whole new RDS server just to get the AdventureWorks data. Instead, I decided to setup an Athena database using S3 to stage AdventureWorks data.
 
 
 ### Step 1
@@ -138,12 +138,15 @@ The below graph shows territory with drill downs for store name and sales person
 ## Question 4: Create a report that shows all sales by product line, with drill-downs into best selling products by territory; the target audience for this report is the AdventureWorks manufacturing & part-acquisition team.
 
 
-The following view shows each product line with a drill down into the territory with best sales. This is filtered for the first few product lines for readability in this view.
+The following view shows each product line with a drill down into the territory with best sales. This view is filtered for the first few product lines for readability.
 
 
 ![Sales-Product-Line](https://cy-assignment.s3-us-west-2.amazonaws.com/Sales+by+Product+Line+Drill.png)
 
 
+## Link to Tableau Workbook
+
+[Assignment Tableau Workbook](https://public.tableau.com/views/Cy_assingment/QuotavsSales?:display_count=y&:origin=viz_share_link)
 
 
 
