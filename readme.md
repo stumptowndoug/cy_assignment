@@ -117,10 +117,13 @@ This is a view of each sales person and the distribution of sales YTD by territo
 ![Sales-by-Territory](https://cy-assignment.s3-us-west-2.amazonaws.com/Sales+by+Territory.png)
 
 
-## Question 2
+## Question 2: In which territories are internet sales out-pacing reseller sales (and by how much)?
 
-#### How are sales-reps using each territory to meet their quotas (by percentage)?
 
+The following visualization shows the difference in amount between Onlines vs Reseller sales. Australia and Germany being the two territories with more online sales.
+
+
+![Sales-by-Territory](https://cy-assignment.s3-us-west-2.amazonaws.com/Internet+vs+Reseller+Var.png)
 
 
 
